@@ -2,7 +2,7 @@
 let buttons = document.querySelectorAll('button');
 let playerScore = document.getElementById('player-score');
 let computerScore = document.getElementById('computer-score');
-const history = document.getElementById('history');
+let history = document.getElementById('history');
 let playerSelection, computerSelection;
 let playerScoreCount = 0;
 let computerScoreCount = 0;
@@ -23,7 +23,7 @@ function playRound(playerSelection, computerSelection) {
         return `You win! You chose ${playerSelection} and Computer chose ${computerSelection}`;
     } else {
         computerScoreCount++;
-        return `You lose! You chose ${computerSelection} and Computer chose ${playerSelection}`;
+        return `You lose! You chose ${playerSelection} and Computer chose ${computerSelection}`;
     }
 }
 
